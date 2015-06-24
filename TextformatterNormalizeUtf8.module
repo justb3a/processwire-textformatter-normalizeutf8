@@ -44,8 +44,7 @@ class TextformatterNormalizeUtf8 extends Textformatter {
    */
   public function format(&$str) {
     if (!class_exists('Normalizer')) {
-        // use the installed normalizer stuff from composer
-        require('vendor/autoload.php');
+      require(wire('config')->paths->TextformatterNormalizeUtf8 . 'vendor/autoload.php');
     }
 
     $str = Normalizer::normalize($str);
