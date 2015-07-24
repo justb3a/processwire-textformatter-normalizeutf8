@@ -10,7 +10,7 @@
  *
  *
  * @author Tabea David <info@justonestep.de>
- * @version 0.0.1
+ * @version 1.0.0
  * @copyright Copyright (c) 2015 KF Interactive, www.kf-interactive.com, <info@kf-interactive.com>
  * @see https://github.com/justonestep/processwire-textformatter-normalizeutf8
  * @see http://www.processwire.com
@@ -32,7 +32,7 @@ class TextformatterNormalizeUtf8 extends Textformatter {
     return array(
       'title' => 'Textfomatter Normalize UTF8',
       'summary' => 'Textformatter Normalize UTF8 uses a lightweight PHP class for UTF8 normalization.',
-      'version' => 1,
+      'version' => 100,
       'href' => 'https://github.com/justonestep/processwire-textformatterii-normalizeutf8'
     );
   }
