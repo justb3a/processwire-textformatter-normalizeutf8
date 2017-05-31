@@ -1,17 +1,16 @@
-<?php
+<?php namespace ProcessWire;
 
 /**
  * Textformatter Normalize UTF8
  *
  * See README.md for usage instructions.
  *
- * ProcessWire 2.x
+ * ProcessWire 3.x
  * Licensed under GNU/GPL v2, see LICENSE.TXT
  *
  *
  * @author Tabea David <info@justonestep.de>
- * @version 1.0.0
- * @copyright Copyright (c) 2015 KF Interactive, www.kf-interactive.com, <info@kf-interactive.com>
+ * @version 1.0.1
  * @see https://github.com/justonestep/processwire-textformatter-normalizeutf8
  * @see http://www.processwire.com
  */
@@ -32,7 +31,7 @@ class TextformatterNormalizeUtf8 extends Textformatter {
     return array(
       'title' => 'Textfomatter Normalize UTF8',
       'summary' => 'Textformatter Normalize UTF8 uses a lightweight PHP class for UTF8 normalization.',
-      'version' => 100,
+      'version' => 101,
       'href' => 'https://github.com/justonestep/processwire-textformatterii-normalizeutf8'
     );
   }
@@ -47,6 +46,6 @@ class TextformatterNormalizeUtf8 extends Textformatter {
       require(wire('config')->paths->TextformatterNormalizeUtf8 . 'vendor/autoload.php');
     }
 
-    $str = Normalizer::normalize($str);
+    $str = \Normalizer::normalize($str);
   }
 }
