@@ -1,3 +1,7 @@
+# WARNING: This repository is no longer maintained :warning:
+
+> This repository will not be updated. The repository will be kept available in read-only mode.
+
 # ProcessWire Textformatter Normalize UTF8
 
 Textformatter Normalize UTF8 uses a lightweight PHP class [(Patchwork UTF-8)](https://github.com/tchwork/utf8).
